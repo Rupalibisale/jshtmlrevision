@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promises tutorial advance js</title>
+</head>
+<body>
+    <script>
+        // let complete = true;
+        // let prom = new promise(function(resolve, reject){
+        //     if(complete){
+        //         resolve("I am successfull");
+        //     } else{
+        //         reject("I am Not successfull");
+        //     }
+        // });
+        // //document.write(prom);
+        // console.log(prom);
+
+        function prom(complete){
+            return new Promise(function(resolve, reject){
+                document.write("Waiting result");
+                setTimeout(()=>{
+                    if(complete){
+                        document.write("Successful");
+                    } else{
+                        document.write("Failed");
+                    }
+                },2000);
+            });
+        }
+        let onfulfilment=(result)=>{
+            document.write(result);
+        }
+        let onRejection =(error)=>{
+            document.write(error);
+        }
+        prom(true).then(onfulfilment);
+        prom(true).catch(onRejection);
+    </script>
+    
+</body>
+</html>

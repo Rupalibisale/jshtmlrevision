@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global, Locl, Block scopes in JavaScript</title>
+</head>
+<body>
+    <script>
+        //Global Scrope
+        var aa= "Rupali";
+        function rhes(){
+            document.write(aa);
+        }
+        rhes();
+
+        //local Scope
+        function bb(){
+            let aa = "Rhea";
+            document.write(aa);
+        }
+        bb();
+
+
+        // Block Scope
+
+        if(true){
+            const zz = "Hello";
+            document.write(zz);
+            
+        }
+
+    </script>
+    
+</body>
+</html>

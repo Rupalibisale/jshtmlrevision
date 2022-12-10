@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype property</title>
+</head>
+<body>
+    <script>
+        function Employee(firstName, lastNAme){
+            this.firstNAme = firstName;
+            this.lastNAme = lastName;
+        }
+        Employee.prototype.fullName = function(){
+            return this.firstName+" "+this.lastName;
+        }
+        var employee1 = new Employee("Rupali", "Bisale");
+        var employee2 = new Employee("Rahul", "Rhea");
+        document.write(employee1,fullName()+"<br>");
+        document.write(employee2.fullName());    //Not run
+    </script>
+    
+</body>
+</html>

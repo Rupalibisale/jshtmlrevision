@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inherritance Javascript</title>
+</head>
+<body>
+    <script>
+        class Bike{
+            constructor(){
+                this.company = "Honda";
+            }
+        }
+        class vehicle extends Bike(){
+            Constructor(name, price){
+                Super();
+                this.name = name;
+                this.price = price;
+            }
+        }
+        var v = new vehicle("Herohonda", 9000);
+        document.writeln(v.company+" "+v.name+" "+v.price); //not run
+
+    </script>
+    
+</body>
+</html>

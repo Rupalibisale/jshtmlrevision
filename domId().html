@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM: GetElementById()</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="telephone" ><br><br>
+        <input type="button" value="Show Number" onClick="Telephonenumber()"><br><br>
+    </form>
+    <script>
+        function Telephonenumber(){
+            var phone = document.getElementById("telephone").value;
+            alert("Your Number is: "+phone);
+        }
+    </script>
+    
+</body>
+</html>
